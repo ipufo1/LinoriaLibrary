@@ -1,7 +1,7 @@
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local CoreGui = game:GetService('CoreGui');
-local Teams = game:GetService('Teams');
+local Teams = game:GetService('Teams');F
 local Players = game:GetService('Players');
 local RunService = game:GetService('RunService')
 local TweenService = game:GetService('TweenService');
@@ -1292,7 +1292,7 @@ do
                             KeyPicker.Toggled = not KeyPicker.Toggled
                             KeyPicker:DoClick()
                         end;
-                    elseif Input.UserInputType == Enum.UserInputType.Keyboard then
+                    elseif Input.UserInputType == Enum.UserInputType.Keyboard and not InputService:GetFocusedTextBox() then
                         if Input.KeyCode.Name == Key then
                             KeyPicker.Toggled = not KeyPicker.Toggled;
                             KeyPicker:DoClick()
