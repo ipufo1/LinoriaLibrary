@@ -1,7 +1,7 @@
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
-local CoreGui = game:GetService('CoreGui');
-local Teams = game:GetService('Teams');F
+local CoreGui = gethui and gethui() or cloneref and cloneref(game:GetService('CoreGui')) or game:GetService('CoreGui');
+local Teams = game:GetService('Teams');
 local Players = game:GetService('Players');
 local RunService = game:GetService('RunService')
 local TweenService = game:GetService('TweenService');
